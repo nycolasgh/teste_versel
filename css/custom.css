@@ -55,8 +55,11 @@
   html body {
       font-family: 'Satoshi-Regular', monospace;
       font-weight: 400;
-      }
+    }
   
+    b {
+    font-weight: 700;
+    }
 
  /* NAV  */
 .nav-list a {
