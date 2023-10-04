@@ -953,6 +953,7 @@ scrollbar-width: none; /* Firefox */
     margin-bottom: 1rem;
     border-radius: 8px;
     border: none;
+    height: 3rem;
 }
 
 #form-btns {
