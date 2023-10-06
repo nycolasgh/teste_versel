@@ -173,7 +173,7 @@
     width: 75px;
     bottom: 1rem;
     right: 1rem;
-    z-index: 999;
+    z-index: 900;
 }
 
 #whatsapp-btn:hover {
@@ -1058,7 +1058,7 @@ footer {
     align-items: start;
     background: black;
     padding: 5% 10%;
-    z-index: 3;
+    z-index: 999;
 }
 
 #footer-infos{
