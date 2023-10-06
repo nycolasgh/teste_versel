@@ -1052,6 +1052,7 @@ scrollbar-width: none; /* Firefox */
 
 
 footer {
+    position: relative;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
