@@ -69,6 +69,9 @@
   }
   
   nav {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,6 +79,7 @@
     height: 10vh;
     width: 100%;
     padding: 0 10%;
+    z-index: 10000;
   }
   
   .nav-list {
@@ -100,7 +104,7 @@
     width: 32px;
     height: 2px;
     background: white;
-    margin: 8px;
+    margin: 8px 0;
     transition: 0.3s;
   }
   
@@ -196,8 +200,7 @@
         width: 100%;
         padding: 10% 10%;
         background-attachment: fixed;
-
-
+        margin-top: 10vh;
 }
 
 .slider #slider-text {
@@ -1059,7 +1062,7 @@ footer {
     align-items: start;
     background: black;
     padding: 5% 10%;
-    z-index: 999;
+    z-index: 998;
 }
 
 #footer-infos{
