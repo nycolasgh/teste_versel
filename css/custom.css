@@ -27,17 +27,6 @@
          font-display: swap;
          font-style: normal;
   }
-
-  @font-face {
-    font-family: 'Satoshi-Black';
-    src: url('fonts/Satoshi/Satoshi-Black.woff2') format('woff2'),
-         url('fonts/Satoshi/Satoshi-Black.woff') format('woff'),
-         url('fonts/Satoshi/Satoshi-Black.ttf') format('truetype');
-         font-weight: 900;
-         font-display: swap;
-         font-style: normal;
-  }
-  
   
 
 
@@ -285,11 +274,13 @@
 #about {
     position: relative;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap-reverse;
     justify-content: space-between;
     align-items: start;
     padding: 5% 10% 0 10%;
     gap: 2rem;
+    background: rgba(0, 0, 0, 0.05);
+
 }
 
 #about-image-container {
@@ -299,6 +290,7 @@
 #about-image {
     position: relative;
     width: 30vw;
+    min-width: 350px;
     height: 50vh;
     z-index: 2;
     background-size: cover;
@@ -316,21 +308,27 @@
 }
 
 #about-title {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    width: 60%;
+    width: 50%;
+}
+
+.br640 {
+    display: none;
 }
 
 #about-title h3 {
     font-weight: 400;
     font-size: 2.5rem;
     color: var(--primary-purple);
+    padding-bottom: 1rem;
 }
 
 #about-title h4 {
     font-weight: 500;
     font-size: 1rem;
     color: var(--secondary-pink);
+    width: 80%;
+    padding-bottom: 2rem;
+
 }
 
 #about-title p {
@@ -366,15 +364,21 @@
 
 .serviceTitle {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     justify-content: start;
     align-items: start;
     gap: 1rem;
+    color: var(--primary-dark-purple);
+
+}
+
+.serviceTitle img {
+    width: 72px;
 }
 
 .serviceTitle h4{
     font-size: 1.5rem;
-    color: var(--primary-dark-purple);
+    color: var(--primary-purple);
     font-family: 'Satoshi-Bold';
 }
 
@@ -383,7 +387,7 @@
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 2rem;
     padding: 2rem;
     border-radius: 2rem;
     background-color: white;
@@ -401,8 +405,9 @@
     justify-content: space-around;
     flex-flow: column wrap;
     align-items: center;
-    background: rgba(0, 0, 0, 0.05);
     height: auto;
+    background: rgba(0, 0, 0, 0.05);
+
 }
 
 #clients h2 {
@@ -433,6 +438,8 @@
     background: white;
     box-shadow: none;
     transition: all ease-out 0.2s;
+    background: transparent;
+
 }
 
 .client-item a {
@@ -454,6 +461,13 @@
     object-fit: contain;
     align-self: center;
     transform: scale(0.9);
+    filter: grayscale(1);
+    opacity: 0.7;
+}
+
+.client-item:hover img {
+    filter: grayscale(0);
+    opacity: 1;
 }
 
 
@@ -477,6 +491,10 @@
     align-self: center;
     z-index: 20;
     top: 0;
+}
+
+#works-header-mobile{
+    display: none;
 }
 
 
@@ -576,13 +594,7 @@
 
 }
 
-#fotos-header {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-between;
-	align-items: center;
-	width: 45vw;
-}
+
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 #fotos-container::-webkit-scrollbar {
@@ -642,7 +654,7 @@ scrollbar-width: none; /* Firefox */
         .control {
             background-color: var(--details-aquamarine);
             height: 50px;
-            width: 50px;
+            aspect-ratio: 1/1;
             border-radius: 100%;
             border: none;
         }
@@ -673,20 +685,20 @@ scrollbar-width: none; /* Firefox */
 
  }
 
-/* #works-list::-webkit-scrollbar-track {
+ /* #galeria::-webkit-scrollbar-track {
     background-color: #F4F4F4;
 }
 
-#works-list::-webkit-scrollbar {
+#galeria::-webkit-scrollbar {
     width: 10px;
     background: white;
 }
 
-#works-list::-webkit-scrollbar-thumb {
+#galeria::-webkit-scrollbar-thumb {
     background: var(--secondary-pink);;
-} */
+}  */
 
-.workItem {
+/* .workItem {
     height: auto;
     background: rgb(232,232,232);
     border-radius: 1rem;
@@ -697,7 +709,7 @@ scrollbar-width: none; /* Firefox */
 #works-list a {
     width: 100%;
     height: 100%;
-}
+} */
 
 /* .work-item1 {
     position: relative;
@@ -811,7 +823,7 @@ scrollbar-width: none; /* Firefox */
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background: linear-gradient(145deg, rgba(0, 0, 0, 0.9) 40%, rgba(99,17,225,0.8) 90%);
+    background: linear-gradient(145deg, rgba(0, 0, 0, 0.9) 30%, rgba(99,17,225,0.8) 90%);
     z-index: 5;
   }
 
@@ -847,12 +859,14 @@ scrollbar-width: none; /* Firefox */
 
 #motivos-section {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     padding: 5% 10% 0 10%;
-    height: 60vh;
+    height: auto;
     position: relative;
     z-index: 4;
+    gap: 1rem;
+
 }
 
 
@@ -860,6 +874,9 @@ scrollbar-width: none; /* Firefox */
     font-size: 2.5rem;
     font-weight: 400;
     color: var(--primary-purple);
+    margin-bottom: calc(5% - 1rem);
+    z-index: 5;
+
     
 }
 
@@ -872,11 +889,18 @@ scrollbar-width: none; /* Firefox */
 
 }
 
+.motivosList hr {
+    border: none;
+    border-top: 1px solid var(--details-aquamarine);
+    margin-bottom: 2rem;
+    
+}
+
 .motivoItem {
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-start;
-    justify-content: end;
+    justify-content: space-between;
     gap: 2rem;
 }
 
@@ -893,7 +917,7 @@ scrollbar-width: none; /* Firefox */
 }
 
 .motivoTxt {
-    color: var(--primary-dark-purple);
+    color: var(--secondary-pink);
     width: 80%;
     font-weight: 400;
 }
@@ -913,7 +937,6 @@ scrollbar-width: none; /* Firefox */
     justify-content: start;
     align-items: start;
     gap: 4rem;
-    flex: 1;
     padding: 5% 10%;
     z-index: 5;
 
@@ -1044,7 +1067,7 @@ font-size: 1rem;
 }
 
 #footer-infos h3 {
-   font-weight: 700;
+   font-family: 'Satoshi-Bold';
 }
 
 #footer-infos p {
