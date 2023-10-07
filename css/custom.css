@@ -108,7 +108,9 @@
     transition: 0.3s;
   }
   
-  
+  .refferal_badge {
+    display: none !important;
+  }
   
   .mobile-menu.active .line1 {
     transform: rotate(-45deg) translate(-8px, 8px);
