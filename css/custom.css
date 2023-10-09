@@ -155,17 +155,6 @@
 .nav-list.active {
     transform: translateX(0);
   }
-  
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
 
 .custom-toggler{
   border-color: var(--secondary-pink);
@@ -193,7 +182,7 @@
 .slider {
         position: relative;
         background-size: cover;
-        background-position: center;
+        background-position:right;
         background-repeat: no-repeat;
         height: auto;
         width: 100%;
@@ -346,6 +335,8 @@
     justify-content: center;
     padding: 5% 10%;
     margin: 0px;
+    scroll-margin-top: 10vh;
+
 }
 
 #service-section h3 {
@@ -409,6 +400,8 @@
     align-items: center;
     height: auto;
     background: rgba(0, 0, 0, 0.05);
+    scroll-margin-top: 10vh;
+
 
 }
 
@@ -481,6 +474,7 @@
     background: rgba(0, 0, 0, 0);
     width: 100%;
     height: auto;
+    scroll-margin-top: 10vh;
 
 }
 
@@ -868,6 +862,8 @@ scrollbar-width: none; /* Firefox */
     position: relative;
     z-index: 4;
     gap: 1rem;
+    scroll-margin-top: 10vh;
+
 
 }
 
@@ -941,6 +937,8 @@ scrollbar-width: none; /* Firefox */
     gap: 4rem;
     padding: 5% 10%;
     z-index: 5;
+    scroll-margin-top: 10vh;
+
 
 }
 
