@@ -56,6 +56,7 @@
     text-decoration: none;
     transition: 0.3s;
     width: 80%;
+    padding: 0.5rem;
   
   }
   
@@ -1058,7 +1059,7 @@ footer {
     justify-content: space-between;
     align-items: start;
     background: black;
-    padding: 5% 10%;
+    padding: 5% 10% calc(5% + 2rem) 10%;
     z-index: 998;
 }
 
@@ -1079,4 +1080,17 @@ font-size: 1rem;
    width: 4rem;
    max-height: 20vh;
    color: white;
+}
+
+#madeby {
+    height: 2rem;
+    background-color: var(--primary-purple);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
