@@ -1050,16 +1050,19 @@ scrollbar-width: none; /* Firefox */
     text-align: center;
 }
 
-
-
 footer {
+    z-index: 998;
+}
+
+
+#footer-container {
     position: relative;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: start;
     background: black;
-    padding: 5% 10% calc(5% + 2rem) 10%;
+    padding: 5% 10%;
     z-index: 998;
 }
 
@@ -1083,9 +1086,9 @@ font-size: 1rem;
 }
 
 #madeby {
-    height: 2rem;
+    height: auto;
     background-color: var(--primary-purple);
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -1093,4 +1096,8 @@ font-size: 1rem;
     justify-content: center;
     align-items: center;
     color: white;
+    padding: 1rem 10%;
+    text-align: center;
+    z-index: 998;
+
 }

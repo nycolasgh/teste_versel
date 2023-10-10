@@ -415,8 +415,12 @@
         width: 100%;
     }
 
-    footer {
-        padding: 5%;
+    #footer-container {
+        padding: 10% 5%;
+    }
+
+    #madeby {
+        padding: 8px 5%;
     }
 
 
