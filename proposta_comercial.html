@@ -14,6 +14,24 @@
     <title>Proposta Comercial</title>
 </head>
 <body>
+    <style>
+        .service h5 {
+            font-size: 1rem;
+            color: var(--secondary-pink);
+            font-family: 'Satoshi-Bold';
+        }
+
+        .service li {
+            margin-left: 1rem;
+        }
+
+        #parcela {
+            font-size: 3rem;
+            font-family: 'Satoshi-Bold';
+
+        }
+
+    </style>
     
     <div id="wrapper">
 
@@ -50,14 +68,14 @@
                 <div id="slider-text" style="background:transparent;">
                     <h2>proposta<br>comercial</h2>
                     <div id="hero-cta">
-                        <h1>Aliamos planejamento estratégico,<br>design, tecnologia e análise de dados <br><b style="color: var(--details-aquamarine);">para elevar o nível do seu negócio!</b></h1>
+                        <h1>Vamos trabalhar juntos, <br>aliando planejamento estratégico,<br>design, tecnologia e análise de dados <br><b style="color: var(--details-aquamarine);">para tirar seu projeto do papel<br> de uma forma extraordinária!</b></h1>
                         <a href="#contato-section" class="btn-primary"><b>Entre em contato!</b></a></button>
                     </div>
                 </div>
                 
-                <div id="bg-container" >
+                <!-- <div id="bg-container" >
                     <img id="bg-img" src="">
-                </div>
+                </div> -->
                 <!-- <div id="slider-image-container">
                     <img  id="slider-image" src="images/rocket-site-alto.png">
                 </div> -->
@@ -65,7 +83,7 @@
             </div>
 
 
-        <div id="motivos-section">
+        <div id="motivos-section" style="padding-bottom: 5%;">
             <h3><b>motivos</b> para <br>trabalhar conosco</h3>
             <div class="motivosList">
                 <div class="motivoItem">
@@ -82,7 +100,7 @@
                     <p class="motivoNumber">3</p>
                     <p class="motivoTxt">Nosso conhecimento técnico e teórico nas áreas de comunicação e tecnologia nos permitem aproveitar ao máximo os recursos do seu negócio.</p>
                 </div>
-                <hr>
+                <hr style="margin-bottom: 0;">
 
             </div>
         </div>
@@ -136,50 +154,93 @@
             <!-- Services Section -->
         
         <div id="service-section">
-            <h3>nossos <b>serviços</b></h3>
+            <h3>cotação de <b>serviços</b></h3>
         
                 <div id="services">
                     <div class="service">
-                        <div class="serviceTitle">
+                        <div class="serviceTitle" style="flex-flow: row; align-items: center;">
                             <img src="images/service/idea.gif">
-                            <h4>Design de marcas</h4>
-                            <p>Tem uma ideia, mas ainda não tem uma marca? 
-                                Ou quer deixar sua empresa de cara nova? 
-                                <br><br>Seja qual for a situação, desenvolvemos 
-                                sua marca com uma identidade visual rica e marcante, 
-                                digna de ocupar o 1º lugar na mente dos consumidores!</p>
-                        </div>  
-                    
-                        <a href="https://api.whatsapp.com/send?phone=5547988439933&text=Ol%C3%A1%2C%20tenho%20interesse%20no%20servi%C3%A7o%20de%20design%20de%20marca%20da%20Alto%21%20Como%20podemos%20prosseguir%3F" target="_blank" class="btn-secondary" style="width: 50%;">Tenho interesse!</a>
+                            <h4>Branding</h4>
+                        </div>
+                        
+                        <p>Vamos realizar uma extensa pesquisa de mercado sobre o nicho em que pretende atuar,
+                            a fim de desenvolver uma marca única, com um nome forte e um visual inesquecível, que realmente se conecta e se comunica com seu público-alvo!
+                        </p>
+                        <div>
+                            <h5 style="padding-bottom: 1rem;">Esse serviço inclui:</h5>
+                            <ul>
+                                <li class="task-included">Estudo de mercado</li>
+                                <li class="task-included">Naming</li>
+                                <li class="task-included">Criação de logotipo</li>
+                                <li class="task-included">Variação de logotipo</li>
+                                <li class="task-included">Identidade visual e desdobramentos</li>
+                                <li class="task-included">Seleção de paleta de cores e tipografia</li>
+                                <li class="task-included">Desenvolvimento de ícones e padrões</li>
+                                <li class="task-included">Design de 5 materiais de apoio</li>
+                                <li class="task-included">Manual da marca</li>
+                                <li class="task-included">Até 3 rodadas de alterações</li>       
+                                <li class="task-included">Assistência no processo de patente e registro de marca</li>
+
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p style="text-align: center; color: var(--secondary-pink);">Por apenas R$2000 à vista ou 10x de</p>
+                            <p id="parcela" style="text-align: center; color: var(--primary-dark-purple);">R$250</p>
+
+                        </div>
+
+                        <a style="align-self: center;" href="https://api.whatsapp.com/send?phone=5547988439933&text=Ol%C3%A1%2C%20tenho%20interesse%20no%20servi%C3%A7o%20de%20design%20de%20marca%20da%20Alto%21%20Como%20podemos%20prosseguir%3F" target="_blank" class="btn-secondary" style="width: 50%;">Tenho interesse!</a>
 
                     </div>
                 
                     <div class="service">
-                        <div class="serviceTitle">
+                        <div class="serviceTitle" style="flex-flow: row; align-items: center;">
                             <img src="images/service/target.gif">
                             <h4>Gestão de tráfego</h4>
-                            <p>Ajudamos a gerenciar e aumentar a presença online da sua marca nas redes sociais, 
+                        </div>
+
+                        <p>Ajudamos a gerenciar e aumentar a presença online da sua marca nas redes sociais, 
                                 como Facebook, Instagram e TikTok. Bem como fazemos seu público-alvo achar sua empresa no Google 
                                 no momento em que estão precisando de seu produto ou serviço. <br><br>O objetivo é aumentar o alcance e 
                                 a interação com o público-alvo certo, tornando sua marca mais conhecida entre as pessoas certas 
                                 e gerando negócios de valor real.</p>
-                        </div>
                         
                         <a href="https://api.whatsapp.com/send?phone=5547988439933&text=Ol%C3%A1%2C%20tenho%20interesse%20no%20servi%C3%A7o%20de%20gest%C3%A3o%20de%20tr%C3%A1fego%20da%20Alto%21%20Como%20podemos%20prosseguir%3F" target="_blank" class="btn-secondary" style="width: 50%;">Tenho interesse!</a>
 
                     </div>
 
                     <div class="service">
-                        <div class="serviceTitle">
+                        <div class="serviceTitle" style="flex-flow: row; align-items: center;">
                             <img src="images/service/monitor.gif">
-                            <h4>Desenvolvimento e <br>manutenção de sites</h4>
-                            <p>Oferecemos diferentes soluções que abrangem os mais diversos orçamentos e nichos, 
-                                criamos desde landing pages e páginas de agendamento, até e-commerces robustos! 
-                                <br><br>Fazemos o site perfeito para seu negócio, com design responsivo, 
-                                SEO impecável e integração com as plataformas de propaganda online (Google Ads e META).</p>
+                            <h4>Desenvolvimento <br>de loja virtual</h4>
                         </div>
-                        
-                        <a href="https://api.whatsapp.com/send?phone=5547988439933&text=Ol%C3%A1%2C%20tenho%20interesse%20no%20servi%C3%A7o%20de%20desenvolvimento%20e%20manuten%C3%A7%C3%A3o%20de%20sites%20da%20Alto%21%20Como%20podemos%20prosseguir%3F" target="_blank" class="btn-secondary" style="width: 50%;">Tenho interesse!</a>
+                        <p>Vamos criar o e-commerce perfeito para sua loja, com design responsivo, carregamento rápido,
+                            SEO impecável e integração com as plataformas de anúncio online (Google Ads e META).</p>
+                            <div>
+                                <h5 style="padding-bottom: 1rem;">Esse serviço inclui:</h5>
+                                <ul>
+                                    <li class="task-included">Análise dos concorrentes</li>
+                                    <li class="task-included">Design das páginas</li>
+                                    <li class="task-included">Configuração de até 30 produtos</li>
+                                    <li class="task-included">Layout desktop, tablet e mobile</li>
+                                    <li class="task-included">Integração com correios para cálculo de frete</li>
+                                    <li class="task-included">Criação dos textos do site para SEO</li>
+                                    <li class="task-included">Gestão de hospedagem e domínio</li>
+                                    <li class="task-included">Configuração de plataformas de anúncios</li>
+                                    <li class="task-included">1 arte personalizada para banner do site</li> 
+                                    <li class="task-included">Até 3 rodadas de alterações</li>       
+                                    <li class="task-included">3 meses de manutenção em casos de problemas técnicos</li>       
+                                </ul>
+                            </div>
+
+                            <div>
+                                <p style="text-align: center; color: var(--secondary-pink);">Por apenas R$2000 à vista ou 10x de</p>
+                                <p id="parcela" style="text-align: center; color: var(--primary-dark-purple);">R$250</p>
+    
+                            </div>
+    
+                        <a style="align-self: center;" href="https://api.whatsapp.com/send?phone=5547988439933&text=Ol%C3%A1%2C%20tenho%20interesse%20no%20servi%C3%A7o%20de%20desenvolvimento%20e%20manuten%C3%A7%C3%A3o%20de%20sites%20da%20Alto%21%20Como%20podemos%20prosseguir%3F" target="_blank" class="btn-secondary" style="width: 50%;">Tenho interesse!</a>
 
                     </div>
 
