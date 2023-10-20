@@ -387,6 +387,7 @@
     border-radius: 2rem;
     background-color: white;
     flex: 1;
+    min-width: 350px;
 }
 
 .service:hover {
