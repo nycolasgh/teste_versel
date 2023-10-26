@@ -15,6 +15,66 @@
 </head>
 <body>
     <style>
+
+#investimento {
+    max-width: 40%; 
+    display: flex; 
+    flex-flow: column; 
+    justify-content: space-between;
+    }
+        .timeline {
+            background-color: var(--primary-purple);
+            padding-bottom: 5%;
+ 
+}
+
+.timeline h3 {
+            color: white;
+            padding: 5% 10%;
+            font-size: 2.5rem;
+ 
+}
+
+.timeline-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow-x: scroll;
+  gap: 16px;
+  padding: 0 10%;
+}
+
+.timeline-box {
+  min-width: 350px;
+  height: 250px;
+  padding: 16px;
+  font-size: 1rem;
+  white-space: normal;
+  color: black;
+  background: white;
+  margin-bottom: 1rem;
+  border-radius: 0 16px 16px 16px ;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.timeline-box h6{
+  font-size: 1.5rem;
+  color: var(--primary-dark-purple);
+  font-family: 'Satoshi-Bold';
+  margin-bottom: 16px;
+}
+
+.timeline-box:first-child,
+.timeline-box:last-child {
+  margin: 0;
+}
+
+
+
         .service h5 {
             font-size: 1rem;
             color: var(--secondary-pink);
@@ -68,7 +128,21 @@
             animation: float 6s ease-in-out infinite;
         }
 
+        .investmentPrice{
+            text-align: end;
+        }
+
+        hr {
+            margin: 0.5rem 0;
+        }
+
         @media screen and (max-width: 991.98px) {
+            #investimento {
+    max-width: 100%; 
+    display: flex; 
+    flex-flow: column; 
+    justify-content: space-between;
+    }
 
             #motivos-section br {
                 display: none;
@@ -363,6 +437,154 @@
         
         </div>
 
+
+
+
+        <div id="motivos-section" style="padding-bottom: 5%;">
+            <div id="investimento">
+                
+                <h3 style="margin-bottom: 2rem;"><b>Investimento </b> <br>para desenvolver <br>seu projeto</h3>
+                <div>
+                    <h4 style="font-family: 'Satoshi-Bold';">Obs: Os pagamentos devem ser considerados por serviço</h4>
+                    <br style="display: block;">
+                    <b>Pagamento para serviços únicos:</b>
+                    <br><br>
+                    <li>A vista no pix, crédito ou débito<br>(30% de entrada no começo <br>do serviço e restante na entrega)</li>
+                    <br>
+                    <li>Crédito parcelado <br>(em até 12x mediante juros da plataforma)</li>
+                    <br style="display: block;">
+                    <hr style="border: none;
+                    border-top: 1px solid var(--details-aquamarine);
+                    margin: 1rem 0;">
+                    <br style="display: block;">
+        
+                    <b>Pagamento para serviços mensais:</b>
+                    <br><br>
+                    <li>A vista no pix, crédito ou débito<br>(Valor completo do serviço)</li>
+                    <br>
+                    <li>Crédito parcelado <br>(em até 12x mediante juros da plataforma)</li>
+                    <br style="display: block;">
+                    <b>*Os pagamentos de serviços mensais devem ser feitos no fim do seu mês de referência</b>
+                </div>
+            </div>
+            <div class="motivosList">
+                <div class="motivoItem" style="padding-bottom: 1rem;">
+                    <p style="font-size: 1.5rem; color: var(--primary-purple); font-family:'Satoshi-Bold';">Serviço Único</p>
+                    <p style="font-size: 1.5rem; color: var(--secondary-pink); font-family:'Satoshi-Bold'; text-align: end;">Valor com desconto </p>
+                </div>
+                <div class="motivoItem">
+                    <p class="investmentService">Branding</p>
+                    <p class="investmentPrice">R$1900</p>
+                </div>
+                <hr>
+                <div class="motivoItem">
+                    <p class="investmentService">Desenvolvimento de E-commerce</p>
+                    <p class="investmentPrice">R$1900</p>
+                </div>
+                <hr>
+                
+                <br style="display: block;">
+                
+                <div class="motivoItem" style="padding-bottom: 1rem;">
+                    <p style="font-size: 1.5rem; color: var(--primary-purple); font-family:'Satoshi-Bold';">Serviço Mensal</p>
+                    <p style="font-size: 1.5rem; color: var(--secondary-pink); font-family:'Satoshi-Bold'; text-align: end;">Valor com desconto </p>
+                </div>
+
+                <div class="motivoItem">
+                    <p class="investmentService">Gestão de tráfego<br>(Primeiros 3 meses)</p>
+                    <p class="investmentPrice">R$700 por mês</p>
+                </div>
+                <hr>
+                <div class="motivoItem">
+                    <p class="investmentService">Social Media<br>(Primeiros 3 meses)</p>
+                    <p class="investmentPrice">R$1650 por mês</p>
+                </div>
+                <hr>
+                <div class="motivoItem">
+                    <p class="investmentService">Domínio, hospedagem e email</p>
+                    <p class="investmentPrice">R$50 por mês
+                    <br>(a partir da criação do site e enquanto ele estiver online)</p>
+                </div>
+                <hr>
+
+            </div>
+        </div>
+
+
+        <section class="timeline">
+            <h3>Timeline de investimento</h3>
+          
+            <div class="timeline-container">
+              <div class="timeline-box">
+                <div>
+                    <h6>1º mês</h6>
+                    <li>Branding</li>
+                </div>
+
+                <div>
+                    <p style="text-align: center; color: var(--secondary-pink);">Pagamento referente ao serviço</p>
+                    <p id="parcela" style="text-align: center; color: var(--primary-dark-purple); font-size: 1.5rem;">R$1900</p>
+                </div>
+              </div>
+              <div class="timeline-box">
+                <div>
+                    <h6>2º mês</h6>
+                    <li>Desenvolvimento do e-commerce</li>
+                </div>
+                <div>
+                    <p style="text-align: center; color: var(--secondary-pink);">Pagamento referente ao serviço</p>
+                    <p id="parcela" style="text-align: center; color: var(--primary-dark-purple); font-size: 1.5rem;">R$1900</p>
+                </div>
+              </div>
+              <div class="timeline-box">
+                <div>
+                    <h6>3º mês</h6>
+                    <li>Social media</li>
+                    <li>Gestão de tráfego</li>
+                    <li>Domínio, hospedagem e email</li>
+                </div>
+                <div>
+                    <p style="text-align: center; color: var(--secondary-pink);">Pagamento referente ao serviço</p>
+                    <p id="parcela" style="text-align: center; color: var(--primary-dark-purple); font-size: 1.5rem;">R$1900</p>
+                </div>
+              </div>
+              <div class="timeline-box">
+                <div>
+                    <h6>4º mês</h6>
+                    <li>Social media</li>
+                    <li>Gestão de tráfego</li>
+                    <li>Domínio, hospedagem e email</li>
+
+                </div>
+                <div>
+                    <p style="text-align: center; color: var(--secondary-pink);">Pagamento referente ao serviço</p>
+                    <p id="parcela" style="text-align: center; color: var(--primary-dark-purple); font-size: 1.5rem;">R$2400</p>
+                </div>
+              </div>
+              <div class="timeline-box">
+                <div>
+                    <h6>5º mês</h6>
+                    <li>Social media</li>
+                    <li>Gestão de tráfego</li>
+                    <li>Domínio, hospedagem e email</li>
+
+                </div>
+                <div>
+                    <p style="text-align: center; color: var(--secondary-pink);">Pagamento referente ao serviço</p>
+                    <p id="parcela" style="text-align: center; color: var(--primary-dark-purple); font-size: 1.5rem;">R$2400</p>
+                </div>
+              </div>
+        
+          
+            </div>
+        </section>
+          
+          
+
+
+
+
+
         <!-- {# Clients Section #} -->
         <div id="clients">
         
@@ -440,6 +662,8 @@
         </button>
         </div>
         -->
+
+
         
         <section id="important-infos">
             <img src="images/saturn-element.png" id="saturn">

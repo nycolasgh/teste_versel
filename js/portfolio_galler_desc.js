@@ -1,33 +1,4 @@
-
-
-
-// Detecta quando o mouse está sobre a div de origem
-let descs = document.querySelectorAll(".fotos-item-descricao");
-
-
-
-  document.querySelector("#arrows").addEventListener("mouseover", function() {
-  // Muda o estilo da div de destino
-  descs.forEach(desc => {
-    desc.style.visibility = "visible";
-  });
-  console.log('active desc');
-
-  });
-
-        // Detecta quando o mouse sai da div de origem
-        document.querySelector("#arrows").addEventListener("mouseout", function() {
-        // Muda o estilo da div de destino de volta para o original
-        descs.forEach(desc => {
-          desc.style.visibility = "hidden";
-        });
-        console.log('desactive desc');
-        });
-    
-
-
-
-        	//Image slider
+	//Image slider
     const controls = document.querySelectorAll(".control");
     var currentItem = 0;
     const items = document.querySelectorAll(".fotos-item");
@@ -43,6 +14,7 @@ let descs = document.querySelectorAll(".fotos-item-descricao");
         } else {
           currentItem += 1;
           console.log(currentItem);
+    
         }
     
         if (currentItem >= maxItems) {
@@ -70,4 +42,8 @@ let descs = document.querySelectorAll(".fotos-item-descricao");
     
       });
     });
+    
+    
+    
+    
     

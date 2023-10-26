@@ -27,7 +27,7 @@
          font-display: swap;
          font-style: normal;
   }
-  
+
 
 
 
@@ -517,7 +517,7 @@
     width: 100%;
     padding: 2% 10%;
     z-index: 10;
-    transition: .5s ease;
+    transition: .5s ease-out;
     /* mix-blend-mode:screen; */
 
 }
@@ -526,6 +526,7 @@
     opacity: 0 !important;
     z-index: 4 !important;
 } 
+
 
 /* Fotos */
 
@@ -637,17 +638,23 @@ scrollbar-width: none; /* Firefox */
 
 		.fotos-item-descricao {
 			height: 30px;
-			width: 100%;
+			width: auto;
 			line-height: 30px;
-			text-align: center;
-			background-color: rgba(255, 255, 255, 0.6);
-			font-size: 20px;
-			font-family: 'Inter', sans-serif;
+			text-align: start;
+			background-color: black;
+			font-size: 16px;
+			font-family: 'Satoshi-Regular', sans-serif;
 			font-weight: 500;
 			position: absolute;
 			bottom: 0;
-			color: #000;
-			visibility: hidden;
+			color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            border-radius: 0 64px 0 0;
+            transition: .5s ease-in;
+
 		}
 
         .control {
@@ -884,7 +891,7 @@ scrollbar-width: none; /* Firefox */
 .motivosList {
     display: flex;
     flex-flow: column nowrap;
-    width: 60%;
+    width: 50%;
     justify-content: space-between;
     z-index: 5;
 
