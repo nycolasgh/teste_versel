@@ -138,6 +138,27 @@
             margin: 0.5rem 0;
         }
 
+        .tlboxFooter {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            
+        }
+
+        #timeline-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .serviceSelect {
+            padding: 16px 32px;
+            border-radius: 100px;
+            border: solid 2px white;
+            background: transparent;
+            color: white;
+        }
+
         @media screen and (max-width: 991.98px) {
             #investimento {
     max-width: 100%; 
@@ -204,8 +225,8 @@
 
         <header>
             <nav>
-              <div class="logo-container"><a class="logo" href="/">
-                <img src="images/logo-alto-v2-site.svg" width="auto" height="100%" alt="logo melhor rota"/>
+              <div class="logo-container"><a class="logo" href="index.html">
+                <img src="images/logo-alto-v2-site.svg" width="auto" height="100%" alt="logo alto"/>
               </a></div>
               <div class="mobile-menu">
                 <div class="line1"></div>
@@ -280,60 +301,85 @@
 
 
         <section class="timeline">
-            <h3 style="font-family: 'Satoshi-Regular'; font-size: 2rem;">checkpoints do projeto</b></h3>
-          
+            <div id="timeline-header">
+                <h3 style="font-family: 'Satoshi-Regular'; font-size: 2rem;">checkpoints do projeto</b></h3>
+                <div style="padding: 5% 10%;">
+                    <button class="serviceSelect" id="branding-select">Branding</button>
+                    <button class="serviceSelect" id="ecommerce-select">E-commerce</button>
+                </div>
+            </div>
             <div class="timeline-container">
               <div class="timeline-box">
                 <div>
-                    <h6>1ª validação</h6>
+                    <h6>1ª etapa - Onboard</h6>
                     <li>Briefing inicial</li>
+                    
                 </div>
 
-                <!-- <div>
-                    <p style="text-align: center; color: var(--secondary-pink);">Pagamento referente ao serviço</p>
-                    <p id="parcela" style="text-align: center; color: var(--primary-dark-purple); font-size: 1.5rem;">R$1900</p>
-                </div> -->
+                <div class="tlboxFooter">
+                    <div style="text-align: left">
+                        <p style="color: var(--secondary-pink);">Data</p>
+                        <p id="parcela" style="color: var(--primary-dark-purple); font-size: 1.5rem;">6/11</p>
+                    </div>
+                    <img src="images/concluded.webp" width="32px" height="32px" style="display: inline;">
+    
+                </div>
               </div>
               <div class="timeline-box">
                 <div>
-                    <h6>2ª validação</h6>
+                    <h6>2ª etapa - Validação</h6>
                     <li>Definição do nome da marca e moodboard guia para identidade visual</li>
                 </div>
-                <div>
-                    <p style="text-align: center; color: var(--secondary-pink);">Data</p>
-                    <p id="parcela" style="text-align: center; color: var(--primary-dark-purple); font-size: 1.5rem;">13/11</p>
+                <div class="tlboxFooter">
+                    <div style="text-align: left">
+                        <p style="color: var(--secondary-pink);">Data</p>
+                        <p id="parcela" style="color: var(--primary-dark-purple); font-size: 1.5rem;">13/11</p>
+                    </div>
+                    <img src="images/concluded.webp" width="32px" height="32px" style="display: inline;">
+    
                 </div>
               </div>
               <div class="timeline-box">
                 <div>
-                    <h6>3ª validação</h6>
+                    <h6>3ª etapa - Validação</h6>
                     <li>Escolha entre 2 propostas de marca (rascunhos), validação de cores e tipografias</li>
                 </div>
-                <div>
-                    <p style="text-align: center; color: var(--secondary-pink);">Data</p>
-                    <p id="parcela" style="text-align: center; color: var(--primary-dark-purple); font-size: 1.5rem;">22/11</p>
+                <div class="tlboxFooter">
+                    <div style="text-align: left">
+                        <p style="color: var(--secondary-pink);">Data</p>
+                        <p id="parcela" style="color: var(--primary-dark-purple); font-size: 1.5rem;">22/11</p>
+                    </div>
+                    <img src="images/concluded.webp" width="32px" height="32px" style="display: inline;">
+    
                 </div>
               </div>
               <div class="timeline-box">
                 <div>
-                    <h6>4ª validação</h6>
+                    <h6>4ª etapa - Validação</h6>
                     <li>Aprovação final do branding.</li>
 
                 </div>
-                <div>
-                    <p style="text-align: center; color: var(--secondary-pink);">Data</p>
-                    <p id="parcela" style="text-align: center; color: var(--primary-dark-purple); font-size: 1.5rem;">30/11</p>
+                <div class="tlboxFooter">
+                    <div style="text-align: left">
+                        <p style="color: var(--secondary-pink);">Data</p>
+                        <p id="parcela" style="color: var(--primary-dark-purple); font-size: 1.5rem;">30/11</p>
+                    </div>
+                    <img src="images/concluded.webp" width="32px" height="32px" style="display: inline;">
                 </div>
               </div>
               <div class="timeline-box">
                 <div>
-                    <h6>5ª entrega</h6>
+                    <h6>5ª etapa - Entrega</h6>
                     <li>Entrega do manual da marca</li>
 
                 </div>
-                <div>
-                    <p style="text-align: center; color: var(--secondary-pink);">Data</p>
-                    <p id="parcela" style="text-align: center; color: var(--primary-dark-purple); font-size: 1.5rem;">15/12</p>
+                <div class="tlboxFooter">
+                    <div style="text-align: left">
+                        <p style="color: var(--secondary-pink);">Data</p>
+                        <p id="parcela" style="color: var(--primary-dark-purple); font-size: 1.5rem;">30/12</p>
+                    </div>
+                    <img src="images/inconcluded.webp" width="32px" height="32px" style="display: inline;">
+    
                 </div>
               </div>
         
