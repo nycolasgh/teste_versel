@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Somos uma agência especializada em comunicação e tecnologia, ajudamos empresas a alcançar seus objetivos de negócios de forma mais eficiente.">
+    <link rel="canonical" href="https://www.altoag.com.br/proposta_comercial.html">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    
+    <title>Proposta Comercial</title>
+</head>
+<body>
+    <style>
+
+
+
+.contratoBtn {
+    text-align: center; 
+    color: var(--secondary-pink);
+    border: solid 2px var(--details-aquamarine);
+    border-radius: 100px;
+    padding: 16px 32px;
+    text-decoration: none;
+
+}
+
+.contratoBtn:hover {
+    background: var(--primary-dark-purple);
+    box-shadow: none;
+    transform: scale(0.99);
+    cursor: pointer;
+    color: white;
+    border: solid 2px var(--primary-dark-purple);
+}
+
+
+.entregaBtn {
+    text-align: center; 
+    color: white;
+    background-color: var(--primary-purple);
+    border: solid 2px var(--primary-purple);
+    border-radius: 100px;
+    padding: 16px 32px;
+    text-decoration: none;
+}
+
+.entregaBtn:hover {
+    background: var(--primary-dark-purple);
+    box-shadow: none;
+    transform: scale(0.99);
+    cursor: pointer;
+    color: white;
+}
+
+
+.disabledBtn {
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.disabledBtn:hover {
+    border: 2px solid rgba(0, 0, 0, 0.05) !important;
+    background: rgba(0, 0, 0, 0.05) !important;
+    color: rgba(0, 0, 0, 0.25) !important;
+    cursor: default;
+    transform: none;
+}
+
+#banner-client-area {
+        position: relative;
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        height: auto;
+        width: 100%;
+        padding: 10% 10%;
+        margin-top: 10vh;
+}
+
+#service-buttons {
+    display: flex;
+    flex-flow: column;
+    gap: 0.5rem;
+}
+
+#investment-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 5% 10% 0 10%;
+    height: auto;
+    position: relative;
+    z-index: 4;
+    gap: 2rem;
+    scroll-margin-top: 10vh;
+}
+
+
+
+#investimento {
+    max-width: 40%; 
+    display: flex; 
+    flex-flow: column; 
+    justify-content: space-between;
+    }
+
+    #investment-section h3 {
+        font-size: 2rem;
+        margin-bottom: 10%;
+        color: var(--primary-purple);
+    }
+
+        .timeline {
+            background-color: var(--primary-purple);
+            padding-bottom: 5%;
+ 
+}
+
+.paid {
+    border: solid 2px var(--details-aquamarine);
+    border-radius: 100px;
+    padding: 4px 8px;
+    background-color: var(--details-aquamarine);
+    color: white;
+}
+
+#checkpoints-section {
+    scroll-margin-top: 10vh;
+}
+
+.timeline h3 {
+            color: white;
+            padding: 5% 10%;
+            font-size: 2rem;
+            line-height: 1;
+ 
+}
+
+.timeline-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow-x: scroll;
+  gap: 16px;
+  padding: 0 10%;
+}
+
+.timeline-box {
+  min-width: 350px;
+  height: 250px;
+  padding: 16px;
+  font-size: 1rem;
+  white-space: normal;
+  color: black;
+  background: white;
+  margin-bottom: 1rem;
+  border-radius: 0 16px 16px 16px ;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.timeline-box h6{
+  font-size: 1.5rem;
+  color: var(--primary-dark-purple);
+  font-family: 'Satoshi-Bold';
+  margin-bottom: 16px;
+}
+
+.timeline-box:first-child,
+.timeline-box:last-child {
+  margin: 0;
+}
+
+
+
+
+
+        .service h5 {
+            font-size: 1rem;
+            color: var(--secondary-pink);
+            font-family: 'Satoshi-Bold';
+        }
+
+        .service li {
+            margin-left: 1rem;
+        }
+
+        #parcela {
+            font-size: 3rem;
+            font-family: 'Satoshi-Bold';
+
+        }
+
+        #important-infos {
+            padding: 5% 10%;
+            display: flex;
+            flex-flow: row nowrap;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+
+        #important-infos div{
+            width: 40%;
+            z-index: 5;
+        }
+
+        #important-infos h3 {
+            font-size: 2.5rem;
+            color: var(--primary-purple);
+        }
+
+        #important-infos h4 {
+            font-size: 1.5rem;
+            color: var(--secondary-pink);
+            font-family: 'Satoshi-Bold';
+        }
+
+        #important-infos p {
+            font-size: 1rem;
+            color: var(--primary-dark-purple);
+        }
+
+        #saturn {
+            width: 35vw;
+            position: absolute;
+            bottom: -10vh;
+            left: -8vw;
+            z-index: 1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .investmentPrice{
+            text-align: end;
+        }
+
+        hr {
+            margin: 0.5rem 0;
+        }
+
+        .tlboxFooter {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            
+        }
+
+        #timeline-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .serviceSelect {
+            padding: 16px 32px;
+            border-radius: 100px;
+            border: solid 2px white;
+            background: transparent;
+            color: white;
+        }
+
+        #entregas-section {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            padding: 5% 10% 0 10%;
+            height: auto;
+            position: relative;
+            z-index: 4;
+            gap: 2rem;
+            scroll-margin-top: 10vh;
+        }
+
+        .entregaList {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+    justify-content: space-between;
+    z-index: 5;
+
+    }
+
+
+        .entregavelItem {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 2rem;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        .entregaBtns {
+            display: flex;
+            flex-flow: column;
+            gap: 8px;
+
+            width: 100%;
+        }
+
+        .entregavelBtn {
+            border: solid 2px var(--primary-purple);
+            background-color: transparent;
+            color: var(--primary-purple);
+        }
+
+        .activeBtn {
+            background: white;
+            color: var(--primary-dark-purple);
+        }
+
+        @media screen and (max-width: 991.98px) {
+            #investimento {
+    max-width: 100%; 
+    display: flex; 
+    flex-flow: column; 
+    justify-content: space-between;
+    }
+
+            #motivos-section br {
+                display: none;
+            }
+
+            #motivos-section {
+                gap: 2rem;
+            }
+
+            #important-infos {
+            padding: 5% 10%;
+            display: flex;
+            flex-flow: column nowrap;
+            position: relative;
+            gap: 2rem;
+        }
+
+        #important-infos  div{
+            width: 100%;
+        }
+
+        #saturn {
+            bottom: auto;
+            left: auto;
+            top: 0;
+            right: 5vw;
+        }
+
+        }
+
+        @media screen and (max-width: 991.98px) {
+            #important-infos {
+            padding: 10% 5%;
+        }
+
+        .timeline h3 {
+            color: white;
+            padding:  10% 5% ;
+            font-size: 2rem;
+            line-height: 1;
+ 
+        }
+
+        .timeline-container {
+            
+            padding: 0 5%;
+        }
+
+        #investment-section {
+        padding: 10% 5%;
+        gap: 0;
+    }
+
+
+    }
+
+    </style>
+
+    <div id="wrapper">
+
+        <a href="https://api.whatsapp.com/send?phone=5547988439933" target="_blank"><img id="whatsapp-btn" src="images/whatsapp.webp"></a>
+
+        <header>
+            <nav>
+              <div class="logo-container"><a class="logo" href="index.html">
+                <img src="images/logo-alto-v2-site.svg" width="auto" height="100%" alt="logo alto"/>
+              </a></div>
+              <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+              </div>
+              <ul class="nav-list">
+                <li><a class="nav-link active" aria-current="page" href="#service-section">Serviços</a></li>
+                <li><a class="nav-link" href="#motivos-section">Investimento</a></li>
+                <li><a class="nav-link" href="#checkpoints-section">Checkpoints</a></li>
+                <li><a class="nav-link" href="#entregas-section">Entregáveis</a></li>
+      
+              </ul>
+            </nav>
+          </header>
+
+          <script type="text/javascript" src="js/mobile_navbar.js"></script>
+
+        <div>
+            <!-- {# Slider section #} -->
+        
+            <div id="banner-client-area">
+        
+                <div id="slider-text" style="background:transparent;">
+                    <div style="display: flex; flex-flow: column; gap: 1rem; justify-content: start;">
+                        <h2>camale</h2>
+                        <p style="font-size: 1.5rem; color: white">Branding, site e comunicação</p>
+                    </div>
+                    <div id="hero-cta">
+                        <h1>Veja nesta página <br>a divisão de etapas do nosso projeto <br>e o andamento de sua execução</h1>
+                    </div>
+                </div>
+                
+                <!-- <div id="bg-container" >
+                    <img id="bg-img" src="">
+                </div> -->
+                <!-- <div id="slider-image-container">
+                    <img  id="slider-image" src="images/rocket-site-alto.png">
+                </div> -->
+        
+            </div>
+
+
+        <!-- <div id="motivos-section" style="padding-bottom: 5%;">
+            <h3>serviços <br>contratados</h3>
+            <div class="motivosList">
+                <div class="motivoItem">
+                    <p class="motivoNumber">1</p>
+                    <p class="motivoTxt">Branding</p>
+                </div>
+                <hr>
+                <div class="motivoItem">
+                    <p class="motivoNumber">2</p>
+                    <p class="motivoTxt">Desenvolvimento de Loja Virtual</p>
+                </div>
+                <hr>
+                <div class="motivoItem">
+                    <p class="motivoNumber">3</p>
+                    <p class="motivoTxt">Social Media</p>
+                </div>
+                <hr>
+                <div class="motivoItem">
+                    <p class="motivoNumber">4</p>
+                    <p class="motivoTxt">Gestão de tráfego</p>
+                </div>
+                <hr style="margin-bottom: 0;">
+
+            </div>
+        </div> -->
+
+
+
+        <div id="service-section">
+            <h3>serviços <b>contratados</b></h3>
+        
+                <div id="services">
+                    <div class="service">
+                        <div>
+                            <div class="serviceTitle" style="flex-flow: row; align-items: center;">
+                                <img src="images/service/idea.gif">
+                                <h4>Branding</h4>
+                            </div>                        
+
+                        </div>
+                        <b style="color: var(--primary-dark-purple);">Prazo de entrega: 30 dias úteis</b>
+                        <div>
+                            <h5 style="padding-bottom: 1rem;">Esse serviço inclui:</h5>
+                            <ul>
+                                <li class="task-included">Estudo de mercado</li>
+                                <li class="task-included">Naming</li>
+                                <li class="task-included">Criação de logotipo</li>
+                                <li class="task-included">Variação de logotipo</li>
+                                <li class="task-included">Identidade visual e desdobramentos</li>
+                                <li class="task-included">Seleção de paleta de cores e tipografia</li>
+                                <li class="task-included">Desenvolvimento de ícones e padrões</li>
+                                <li class="task-included">Design de 5 materiais de apoio</li>
+                                <li class="task-included">Manual da marca</li>
+                                <li class="task-included">Até 3 rodadas de alterações</li>       
+                                <li class="task-included">Assistência no processo de patente e registro de marca<br>
+                                </li>
+                                <br>
+                                <b style="color: var(--primary-dark-purple);">Obs: Não incluso processo de registro no INPI</b>
+
+
+                            </ul>
+                        </div>
+
+                        <div id="service-buttons">
+                            <a class="contratoBtn" href="https://docs.google.com/document/d/18o-nezHUnj986l0NMX9jffpX9KYwWKEBnC7qXbtgx6E/edit?usp=sharing" target="_blank">Ver Contrato</a>
+                            <a class="entregaBtn">Ver Entregas</a>
+                        </div>
+
+                    </div>
+
+                    <div class="service">
+                        <div>
+                            <div class="serviceTitle" style="flex-flow: row; align-items: center;">
+                                <img src="images/service/monitor.gif">
+                                <h4>Desenvolvimento <br>de loja virtual</h4>
+                            </div>
+                        </div>
+                        <b style="color: var(--primary-dark-purple);">Prazo de entrega: 30 dias úteis<br>(Após desenvolvimento da identidade visual)</b>
+
+                            <div>
+                                <h5 style="padding-bottom: 1rem;">Esse serviço inclui:</h5>
+                                <ul>
+                                    <li class="task-included">Análise dos concorrentes</li>
+                                    <li class="task-included">Design das páginas</li>
+                                    <li class="task-included">Configuração de até 30 produtos</li>
+                                    <li class="task-included">Layout desktop, tablet e mobile</li>
+                                    <li class="task-included">Integração com correios para cálculo de frete</li>
+                                    <li class="task-included">Criação dos textos do site para SEO</li>
+                                    <li class="task-included">Configuração de hospedagem e domínio</li>
+                                    <li class="task-included">Configuração de plataformas de anúncios</li>
+                                    <li class="task-included">1 arte personalizada para banner do site</li> 
+                                    <li class="task-included">Até 3 rodadas de alterações</li>       
+                                    <li class="task-included">3 meses de manutenção em casos de problemas técnicos</li>       
+                                </ul>
+                            </div>
+
+                            <div id="service-buttons">
+                                <a class="contratoBtn">Ver Contrato</a>
+                                <a class="entregaBtn disabledBtn">Ver Entregas</a>
+    
+                                
+                            </div>
+    
+                    </div>
+
+                    <div class="service">
+                        <div>
+                            <div class="serviceTitle" style="flex-flow: row; align-items: center;">
+                                <img src="images/heart.gif">
+                                <h4>Social Media</h4>
+                            </div>
+
+                        </div>
+                        <b style="color: var(--primary-dark-purple);">Contrato de 3 meses</b>
+                        
+                        <div>
+                            <h5 style="padding-bottom: 1rem;">Esse serviço inclui:</h5>
+                            <ul>
+                                <li class="task-included">Análise dos concorrentes</li>
+                                <li class="task-included">Calendário editorial de conteúdo</li>
+                                <li class="task-included">8 posts no feed por mês</li>
+                                <li class="task-included">4 reels por mês (captação inclusa)</li>
+                                <li class="task-included">Roteiro e direcionamento para stories</li>
+                                <li class="task-included">Design das capas da seção "Destaques"</li>
+                                <li class="task-included">Criação de persona e tom de voz da marca</li>
+                                <li class="task-included">Padronização de respostas para SAC</li>
+                                <li class="task-included">Descrição da Bio</li> 
+                                <li class="task-included">1 rodada de alteração por post</li>       
+                                <li class="task-included">Mapeamento de influencers do nicho</li>       
+                            </ul>
+                            <br>
+                            <b style="color: var(--primary-dark-purple);">Obs: Não incluso captação de fotos,<br> agendamento de publicações <br>e gerenciamento de redes sociais</b>
+                        </div>
+
+                        <div id="service-buttons">
+                            <a class="contratoBtn disabledBtn">Ver Contrato</a>
+                            <a class="entregaBtn disabledBtn">Ver Entregas</a>
+
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="service">
+                        <div>
+                            <div class="serviceTitle" style="flex-flow: row; align-items: center;">
+                                <img src="images/service/target.gif">
+                                <h4>Gestão de Tráfego</h4>
+                            </div>
+
+                        </div>
+                        <b style="color: var(--primary-dark-purple);">Contrato de 3 meses</b>
+                        
+                        <div>
+                            <h5 style="padding-bottom: 1rem;">Esse serviço inclui:</h5>
+                            <ul>
+                                <li class="task-included">Análise dos concorrentes</li>
+                                <li class="task-included">2 campanhas na META</li>
+                                <li class="task-included">2 campanhas no Google Ads</li>
+                                <li class="task-included">Criação das artes dos anúncios (se necessário)</li>
+                                <li class="task-included">Redação publicitária dos anúncios</li>
+                                <li class="task-included">Criação de públicos-alvo nas plataformas de anúncios</li>
+                                <li class="task-included">Rastreamento de conversões do site</li>
+                                <li class="task-included">Revisão frequente e melhoria das campanhas de acordo com os resultados</li> 
+                                <li class="task-included">1 rodada de alteração por campanha</li>       
+                                <li class="task-included">Relatório mensal de resultados</li>       
+
+                            </ul>
+                            <br>
+                            <b style="color: var(--primary-dark-purple);">Obs: Não incluso valor a ser investido nas plataformas.</b>
+                        </div>
+
+                        <div id="service-buttons">
+                            <a class="contratoBtn disabledBtn">Ver Contrato</a>
+                            <a class="entregaBtn disabledBtn">Ver Entregas</a>        
+                        </div>
+                        
+
+                    </div>
+
+                </div>
+        
+        </div>
+
+        <div id="investment-section" style="padding-bottom: 5%;">
+            <div id="investimento">
+                
+                <h3 style="margin-bottom: 2rem;"><b>Investimento </b> <br>para desenvolver <br>seu projeto</h3>
+                
+            </div>
+            <div class="motivosList">
+                <div class="motivoItem" style="padding-bottom: 1rem;">
+                    <p style="font-size: 1.5rem; color: var(--primary-dark-purple); font-family:'Satoshi-Bold';">Serviço Único</p>
+                    <p style="font-size: 1.5rem; color: var(--primary-dark-purple); font-family:'Satoshi-Bold'; text-align: end;">Valor</p>
+                </div>
+                <div class="motivoItem">
+                    <p class="investmentService">Branding</p>
+                    <p class="investmentPrice">R$1800</p>
+                    <b class="paid">Pago</b>
+                </div>
+                <hr>
+                <div class="motivoItem">
+                    <p class="investmentService">Desenvolvimento <br>de E-commerce</p>
+                    <p class="investmentPrice">R$1800</p>
+                    <b class="investmentPrice">Entrada <br>Paga</b>
+                </div>
+                <hr>
+                
+                <br style="display: block;">
+
+                <div class="motivoItem">
+                    <p style="font-size: 1.5rem; color: var(--primary-dark-purple); font-family:'Satoshi-Bold';">Serviço Mensal</p>
+                    <p style="font-size: 1.5rem; color: var(--primary-dark-purple); font-family:'Satoshi-Bold'; text-align: end;">Valor</p>
+                </div>
+
+                <div class="motivoItem">
+                    <p class="investmentService">Gestão de tráfego<br>(Primeiros 3 meses)</p>
+                    <p class="investmentPrice">R$600 por mês</p>
+    
+                </div>
+                <hr>
+                <div class="motivoItem">
+                    <p class="investmentService">Social Media<br>(Primeiros 3 meses)</p>
+                    <p class="investmentPrice">R$1650 por mês</p>
+                </div>
+                <hr>
+                <div class="motivoItem">
+                    <p class="investmentService">Domínio, hospedagem e email</p>
+                    <p class="investmentPrice">R$50 por mês
+                    <br>(a partir da criação do site e enquanto ele estiver online)</p>
+                </div>
+                <hr>
+
+            </div>
+        </div>
+
+
+
+        <section class="timeline" id="checkpoints-section">
+            <div id="timeline-header">
+                <h3 style="font-family: 'Satoshi-Regular'; font-size: 2rem;">checkpoints do projeto</b></h3>
+                <div style="padding: 5% 10%;">
+                    <button class="serviceSelect activeBtn" id="branding-select">Branding</button>
+                    <!-- <button class="serviceSelect" id="ecommerce-select">E-commerce</button>
+                    <button class="serviceSelect" id="all-select">Ver todos</button> -->
+                </div>
+            </div>
+            <div class="timeline-container">
+              <div class="timeline-box">
+                <div>
+                    <h6>1ª etapa - Onboard</h6>
+                    <li>Briefing inicial</li>
+                    
+                </div>
+
+                <div class="tlboxFooter">
+                    <div style="text-align: left">
+                        <p style="color: var(--secondary-pink);">Data</p>
+                        <p id="parcela" style="color: var(--primary-dark-purple); font-size: 1.5rem;">6/11</p>
+                    </div>
+                    <img src="images/concluded.webp" width="32px" height="32px" style="display: inline;">
+    
+                </div>
+              </div>
+              <div class="timeline-box">
+                <div>
+                    <h6>2ª etapa - Validação</h6>
+                    <li>Definição do nome da marca e moodboard guia para identidade visual</li>
+                </div>
+                <div class="tlboxFooter">
+                    <div style="text-align: left">
+                        <p style="color: var(--secondary-pink);">Data</p>
+                        <p id="parcela" style="color: var(--primary-dark-purple); font-size: 1.5rem;">13/11</p>
+                    </div>
+                    <img src="images/concluded.webp" width="32px" height="32px" style="display: inline;">
+    
+                </div>
+              </div>
+              <div class="timeline-box">
+                <div>
+                    <h6>3ª etapa - Validação</h6>
+                    <li>Escolha entre 2 propostas de marca (rascunhos), validação de cores e tipografias</li>
+                </div>
+                <div class="tlboxFooter">
+                    <div style="text-align: left">
+                        <p style="color: var(--secondary-pink);">Data</p>
+                        <p id="parcela" style="color: var(--primary-dark-purple); font-size: 1.5rem;">22/11</p>
+                    </div>
+                    <img src="images/concluded.webp" width="32px" height="32px" style="display: inline;">
+    
+                </div>
+              </div>
+              <div class="timeline-box">
+                <div>
+                    <h6>4ª etapa - Validação</h6>
+                    <li>Aprovação final do branding.</li>
+
+                </div>
+                <div class="tlboxFooter">
+                    <div style="text-align: left">
+                        <p style="color: var(--secondary-pink);">Data</p>
+                        <p id="parcela" style="color: var(--primary-dark-purple); font-size: 1.5rem;">30/11</p>
+                    </div>
+                    <img src="images/concluded.webp" width="32px" height="32px" style="display: inline;">
+                </div>
+              </div>
+              <div class="timeline-box">
+                <div>
+                    <h6>5ª etapa - Entrega</h6>
+                    <li>Entrega do manual da marca</li>
+
+                </div>
+                <div class="tlboxFooter">
+                    <div style="text-align: left">
+                        <p style="color: var(--secondary-pink);">Data</p>
+                        <p id="parcela" style="color: var(--primary-dark-purple); font-size: 1.5rem;">15/12</p>
+                    </div>
+                    <img src="images/inconcluded.webp" width="32px" height="32px" style="display: inline;">
+    
+                </div>
+              </div>
+        
+          
+            </div>
+
+
+            <!-- <div class="timeline-container" id="tl-ecommerce">
+                <div class="timeline-box">
+                  <div>
+                      <h6>1ª etapa - Onboard</h6>
+                      <li>Briefing inicial</li>
+                      
+                  </div>
+  
+                  <div class="tlboxFooter">
+                      <div style="text-align: left">
+                          <p style="color: var(--secondary-pink);">Data</p>
+                          <p id="parcela" style="color: var(--primary-dark-purple); font-size: 1.5rem;">6/11</p>
+                      </div>
+                      <img src="images/concluded.webp" width="32px" height="32px" style="display: inline;">
+      
+                  </div>
+                </div>
+                <div class="timeline-box">
+                  <div>
+                      <h6>2ª etapa - Validação</h6>
+                      <li>Definição do nome da marca e moodboard guia para identidade visual</li>
+                  </div>
+                  <div class="tlboxFooter">
+                      <div style="text-align: left">
+                          <p style="color: var(--secondary-pink);">Data</p>
+                          <p id="parcela" style="color: var(--primary-dark-purple); font-size: 1.5rem;">13/11</p>
+                      </div>
+                      <img src="images/concluded.webp" width="32px" height="32px" style="display: inline;">
+      
+                  </div>
+                </div>
+                <div class="timeline-box">
+                  <div>
+                      <h6>3ª etapa - Validação</h6>
+                      <li>Escolha entre 2 propostas de marca (rascunhos), validação de cores e tipografias</li>
+                  </div>
+                  <div class="tlboxFooter">
+                      <div style="text-align: left">
+                          <p style="color: var(--secondary-pink);">Data</p>
+                          <p id="parcela" style="color: var(--primary-dark-purple); font-size: 1.5rem;">22/11</p>
+                      </div>
+                      <img src="images/concluded.webp" width="32px" height="32px" style="display: inline;">
+      
+                  </div>
+                </div>
+                <div class="timeline-box">
+                  <div>
+                      <h6>4ª etapa - Validação</h6>
+                      <li>Aprovação final do branding.</li>
+  
+                  </div>
+                  <div class="tlboxFooter">
+                      <div style="text-align: left">
+                          <p style="color: var(--secondary-pink);">Data</p>
+                          <p id="parcela" style="color: var(--primary-dark-purple); font-size: 1.5rem;">30/11</p>
+                      </div>
+                      <img src="images/concluded.webp" width="32px" height="32px" style="display: inline;">
+                  </div>
+                </div>
+                <div class="timeline-box">
+                  <div>
+                      <h6>5ª etapa - Entrega</h6>
+                      <li>Entrega do manual da marca</li>
+  
+                  </div>
+                  <div class="tlboxFooter">
+                      <div style="text-align: left">
+                          <p style="color: var(--secondary-pink);">Data</p>
+                          <p id="parcela" style="color: var(--primary-dark-purple); font-size: 1.5rem;">30/12</p>
+                      </div>
+                      <img src="images/inconcluded.webp" width="32px" height="32px" style="display: inline;">
+      
+                  </div>
+                </div>
+          
+            
+              </div> -->
+        </section>
+
+        <section id="entregas-section">
+            
+
+                <!-- <img src="images/saturn-element.png" id="saturn"> -->
+
+                <h3>arquivos<br><b>entregáveis</b></h3>
+                <div class="entregaList">
+                    <div class="entregavelItem" style="align-items: center;">
+                        <p class="motivoTxt">Branding</p>
+                        <div class="entregaBtns">
+                            <a class="entregavelBtn entregaBtn" href="https://docs.google.com/presentation/d/1ubajwYOdeSQjjVCXe80NevC3jIWvx0WpphSGP4rDYoY/edit?usp=sharing" target="_blank">Apresentação da Marca</a>
+                            <a class="entregavelBtn entregaBtn" href="https://drive.google.com/drive/folders/1ZYXkqrPHxMiVDHMdOR3PEi7M-Y2D5_RX?usp=sharing" target="_blank">Arquivos da Marca</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="entregavelItem">
+                        <p class="motivoTxt">E-commerce</p>
+                        <div class="entregaBtns">
+                            <a class="entregaBtn entregaBtn disabledBtn" >Aprovação do Layout</a>
+                            <a class="entregaBtn entregaBtn disabledBtn" >Site Finalizado</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="entregavelItem">
+                        <p class="motivoTxt">Social Media</p>
+                        <div class="entregaBtns">
+                            <a class="entregaBtn entregaBtn disabledBtn">Aprovação do Conteúdo</a>
+                            <a class="entregaBtn entregaBtn disabledBtn">Publicações Finalizadas</a>
+                        </div>
+                    </div>
+                    <hr style="margin-bottom: 0;">
+    
+                </div>
+            </div>
+    
+
+        </section>
+
+        
+        <section id="important-infos">
+            
+
+            <div>
+                <img src="images/warning.png" width="64px" height="64px" style="display: inline;">
+                <h3>informações <br><b>importantes</b></h3>
+            </div>
+
+            <div>
+                <h4>Pagamento</h4>
+                <br>
+                <div style="color: var(--primary-dark-purple);">
+                    <b>Pagamento para serviços únicos:</b>
+                    <br><br>
+                    <li>A vista no pix, crédito ou débito<br>(30% de entrada no começo <br>do serviço e restante na entrega)</li>
+                    <br>
+                    <li>Crédito parcelado <br>(em até 12x mediante juros da plataforma)</li>
+                    <br style="display: block;">
+                    <hr style="border: none;
+                    border-top: 1px solid var(--details-aquamarine);
+                    margin: 1rem 0;">
+                    <br style="display: block;">
+        
+                    <b>Pagamento para serviços mensais:</b>
+                    <br><br>
+                    <li>A vista no pix, crédito ou débito<br>(Valor completo do serviço)</li>
+                    <br>
+                    <li>Crédito parcelado <br>(em até 12x mediante juros da plataforma)</li>
+                    <br style="display: block;">
+                    <b>*Os pagamentos de serviços mensais devem ser feitos no fim do seu mês de referência<br>
+                        Obs: Os pagamentos devem ser considerados por serviço</b>
+                </div>
+                <br><br>
+                <h4>Atendimento</h4>
+                <br>
+                <p>Todas as informações e conteúdos devem ser tratados via WhatsApp, e-mail ou reunião.
+                    <br><br>
+                    Atendemos solicitações de segunda à sexta, das 8h às 18:30h. 
+                    Sábados das 8h às 13h. 
+                    <br>
+                    <b>
+                    47 98843-9933 <br>
+                    contato@altoag.com.br
+                    </b>
+                </p>
+                <br><br>
+                <h4>Mídia</h4>
+                <br>
+                <p>Os valores investidos em mídias de tráfego pago são saldos a serem creditados
+                    dentro das plataformas de anúncios, não sendo pagos a prestadora de serviços e não contabilizados na emissão da NF
+                </p>
+
+
+
+
+        </section>
+
+<footer>
+    <div id="footer-container">
+        <div id="footer-infos">
+            <h3>
+                Contato
+            </h3>
+            <br>
+            <p>
+                (47) 9 8843-9933
+            </p>
+            <p>
+                contato@altoag.com.br
+            </p>
+            <p>
+                Rua Comandante Eugênio Lepper, 97 | Centro, Joinville - SC
+            </p>
+        </div>
+        <div id="footer-logo" style="height: 80%;">
+            <a href="index.html">
+                <img src="images/logo-alternativa.svg">
+            </a>
+        </div>
+    
+    </div>
+
+    <!--
+    <div id="footer-social" style="visibility: hidden;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30px" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30px" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+            <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+        </svg>
+
+        <br>
+
+        {% if request.user.is_authenticated %}
+        <a href="{% url 'feedback' %}" class="btn btn-primary button btn-theme-aquamarine my-3">Deixe seu Feedback</a>
+        {% endif %}
+    </div>
+
+    -->
+
+
+    <div id="madeby"><p>Site desenvolvido por Nycolas Hartkopf. <br class="br640">Copyright © Alto 2023. Todos os direitos reservados.</p></div>
+
+</footer>
+
+        <script src="js/wpp_link.js"></script>
+        <script src="js/portfolio_gallery.js"></script>
+
+</body>
+</html>
