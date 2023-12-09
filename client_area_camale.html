@@ -178,6 +178,13 @@
   margin: 0;
 }
 
+#slider-text img {
+            width: 50%;
+        }
+#hero-cta h2 {
+    font-family: 'Satoshi-Regular';
+    font-size: 1rem;
+}
 
 
 
@@ -342,8 +349,8 @@
             gap: 2rem;
         }
         
-        #hero-cta img {
-            width: 80%;
+        #slider-text img {
+            width: 100%;
         }
 
         #important-infos  div{
@@ -362,6 +369,12 @@
         @media screen and (max-width: 991.98px) {
             #important-infos {
             padding: 10% 5%;
+        }
+
+        #slider-text {
+            display: flex;
+            flex-flow: column;
+            gap: 3rem;
         }
 
         .timeline h3 {
@@ -420,12 +433,13 @@
         
                 <div id="slider-text" style="background:transparent;">
                     <div style="display: flex; flex-flow: column; gap: 1rem; justify-content: start;">
+                        
+                        <img src="images/clients/Logo-Camale-Horizontal-Colorida-Tagline_2.webp">
+                    </div>
+                    <div id="hero-cta">
                         <h1 style="font-family: Boska-Black; font-size: 2.5rem; color: var(--primary-dark-purple);">Área do Cliente</h1>
                         <h2 style="font-size: 1rem;">Veja nesta página <br>a divisão de etapas do nosso projeto <br>e o andamento de sua execução</h2>
                         <p style="font-size: 1.5rem; color: white">Branding, site e comunicação</p>
-                    </div>
-                    <div id="hero-cta">
-                        <img src="images/clients/Logo-Camale-Horizontal-Colorida-Tagline_2.webp">
 
                     </div>
                 </div>
