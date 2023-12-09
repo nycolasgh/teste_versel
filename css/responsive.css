@@ -345,6 +345,13 @@
     width: 100%;
    }
 
+   #fotos-container {
+    width: 100%;
+   }
+   #galeria{
+    width: 100%;
+   }
+
     .motivosList {
         width: 100%;
         gap: 2rem;
