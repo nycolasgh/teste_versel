@@ -333,7 +333,7 @@
     }
 
     #clients #clients-list .client-item {
-        width: 40vw;
+        width: 40vw !important;
     }
 
     #motivos-section {
